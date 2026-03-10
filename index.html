@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Table</title>
+</head>
+<body>
+
+<h2>Student Table</h2>
+
+<label>Sort By:</label>
+<select id="sortField" onchange="sortTable()">
+    <option value="0">First Name</option>
+    <option value="1">Middle Name</option>
+    <option value="2">Last Name</option>
+    <option value="3">Age</option>
+</select>
+
+<label>Order:</label>
+<select id="sortOrder" onchange="sortTable()">
+    <option value="asc">A-Z / Youngest</option>
+    <option value="desc">Z-A / Oldest</option>
+</select>
+
+<br><br>
+
+<table border="1" id="myTable">
+    <tr>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    <tr><td>John</td><td>Allen</td><td>Cruz</td><td>20</td></tr>
+    <tr><td>Anna</td><td>Claire</td><td>Santos</td><td>18</td></tr>
+    <tr><td>Mark</td><td>Brian</td><td>Lopez</td><td>22</td></tr>
+    <tr><td>David</td><td>James</td><td>Garcia</td><td>19</td></tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
